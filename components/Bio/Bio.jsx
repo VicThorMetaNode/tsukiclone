@@ -36,13 +36,14 @@ const BioBanner = ({ bioTitle, bioText, imageUrl }) => (
         </Box>
       </VStack>
     </Box>
-    <Box py={0}>
+    <Box>
       <Image
         objectFit="cover"
         src={imageUrl}
         width={900}
         height={800}
         alt="Tsuki Brand Collection Image"
+        py={1}
       />
     </Box>
   </Stack>

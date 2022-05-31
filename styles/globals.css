@@ -171,14 +171,11 @@ body {
   }
   
   a {
-    font-size: var(--font-size-20);
     text-decoration: none;
-    color: var(--color-hyperlink);
+    
   }
 
-  a:hover{
-    color: var(--color-hyperlink-hover);
-  }
+ 
 
   h1,
   h2,
@@ -229,3 +226,17 @@ body {
   .main-text-font {
     font-family: var(--font-nunito);
   }
+
+  .navbar-title {
+    font-family: var(--font-nunito);
+  }
+
+  .navbar-title-span {
+    color: var(--color-bubble-gum);
+  }
+
+  .banner-adv-xs {
+    font-family: var(--font-dongle);
+  }
+
+ 

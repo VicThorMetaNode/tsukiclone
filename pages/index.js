@@ -1,6 +1,6 @@
 
 
-import { Header, Collection, Bio } from '../components/index'
+import { Header, Collection, Bio, BannerAdXS, Sale } from '../components/index'
 
 
 
@@ -11,6 +11,8 @@ export default function Home() {
     <Header />
     <Collection />
     <Bio />
+    <BannerAdXS />
+    <Sale />
     </>
   
   )
