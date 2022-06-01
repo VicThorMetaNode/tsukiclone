@@ -8,7 +8,7 @@ import Link from "next/link";
 // Import CHAKRA tools
 import { Box, Stack, VStack, Container, Text } from "@chakra-ui/react";
 
-//Components Reusable
+//Reusable component
 const BioBanner = ({ bioTitle, bioText, imageUrl }) => (
   <Stack
     direction={["column", "row"]}
@@ -43,7 +43,6 @@ const BioBanner = ({ bioTitle, bioText, imageUrl }) => (
         width={900}
         height={800}
         alt="Tsuki Brand Collection Image"
-        py={1}
       />
     </Box>
   </Stack>

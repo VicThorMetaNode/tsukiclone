@@ -1,3 +1,6 @@
+// ------------ SIMPLE BANNER EXTRA SMALL : title -------------
+// if modify, refresh browser to see modification !
+
 import React from "react";
 
 // Import CHAKRA tools

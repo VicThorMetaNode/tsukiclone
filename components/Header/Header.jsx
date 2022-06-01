@@ -1,9 +1,13 @@
-//Import image from React
-import Image from "next/image";
+// ------------ HEADER -------------
 
-import { Box, Button } from "@chakra-ui/react";
-//Import link from React
+//Import image from special built-in Nextjs module for better management
+import Image from "next/image";
+//Import link from special built-in Nextjs module for better management
+
 import Link from "next/link";
+
+// Import CHAKRA tools
+import { Box, Button } from "@chakra-ui/react";
 
 const Header = () => {
   return (

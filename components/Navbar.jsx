@@ -1,5 +1,8 @@
 import React from "react";
+//Import special built-in link management
 import Link from "next/link";
+
+// Import CHAKRA tools
 import {
   Text,
   Menu,
@@ -14,7 +17,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 
-//import Icons
+//import Icons from React-icons NPM: notice, we use Icon tool from Chakra ui an mention react icon as {props} :see below
 import { FcMenu } from "react-icons/fc";
 import { BiSearchAlt, BiUser, BiPackage } from "react-icons/bi";
 

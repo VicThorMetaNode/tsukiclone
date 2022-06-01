@@ -9,9 +9,9 @@ import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 
 // Import CHAKRA tools
-import { Box, Button, Stack, StylesProvider, VStack } from "@chakra-ui/react";
+import { Box, Button, Stack, VStack } from "@chakra-ui/react";
 
-//Components Reusable
+//Reusable Component
 const ProductBanner = ({ linkName, buttonText, imageUrl }) => (
   <VStack>
     <Image
