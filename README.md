@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next-Tsuki-Clone
+> **Under construction**: **June 2022** 
+<p>This project's fully built with NextJS, Express, MongoDB, NodeJs</p>
+> Note: this website is based on Pewdiepie ecomm website. Despite being fully functional, this website is fake and not deployed for commercial purpose ! 
 
-## Getting Started
+![Screenshot 2022-05-31 153553](https://user-images.githubusercontent.com/98230162/171385207-76e0e835-f44c-4284-b01b-7e328bcb8f7d.jpg)
 
-First, run the development server:
+<p>📦NPM Packages used:</p>
+<p>✔️Nodemon : refresh server every time a change is made</p>
+<p>✔️Chakra-Ui : a simple, modular and accessible component library</p>
+<p>✔️eMotion : The Next Generation of CSS-in-JS for animation</p>
+<p>✔️Axios: parse incoming request bodies in a middleware before handlers</p>
+<p>✔️Framer-Motion : an open source, production-ready library that's designed for all creative developers</p>
+<p>✔️Millify : converts long numbers into pretty, human-readable strings</p>
+<p>✔️nProgress : slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium</p>
+<p>✔️React-horizontal-scrolling-menu : a horizontal scrolling menu component for React</p>
+<p>✔️React-icons : a simple, modular and accessible icons library </p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Note: this project is a *beta version* and is updated over time until an ultimate version is reached, meaning a fully ecomm.
+Cheers !
