@@ -1,8 +1,9 @@
 # Next-Tsuki-Clone
 > **Under construction**: **June 2022** 
-<p>This project's fully built with ***NextJS, Express, MongoDB, NodeJs***</p>
+<p>This project's fully built with ***NextJS***, ***Express***, ***MongoDB***, ***NodeJs***</p>
 > Note: this website is based on Pewdiepie ecomm website. Despite being fully functional, this website is fake and not deployed for commercial purpose ! 
-![Screenshot 2022-05-31 153553](https://user-images.githubusercontent.com/98230162/171384250-dd99e55d-b7f4-4088-952b-dc808bad43fd.jpg)
+
+![Screenshot 2022-05-31 153553](https://user-images.githubusercontent.com/98230162/171385207-76e0e835-f44c-4284-b01b-7e328bcb8f7d.jpg)
 
 <p>📦NPM Packages used:</p>
 <p>✔️Nodemon : refresh server every time a change is made</p>
