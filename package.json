@@ -1,5 +1,6 @@
 {
   "name": "tsukiclone",
+  "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,8 +20,7 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-horizontal-scrolling-menu": "^2.8.2",
-    "react-icons": "^4.3.1",
-    "react-router-dom": "^6.3.0"
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "eslint": "8.16.0",

@@ -1,13 +1,18 @@
 // ------------ SALES PRODUCTS MAPPING COMPONENT: every product on sale -------------
-import React from "react";
+// import { useState, useEffect } from "react";
 
 //Import Data product on sales
 import mischiefProductData from "../../utilities/Sales Collection/mischiefProductData";
 //Import image from React
 import Image from "next/image";
+//Import Next special Link
+import NextLink from "next/link";
+
+//Import Axios of fetching products data
+// import axios from "axios";
 
 // Import CHAKRA tools
-import { Box, Text, VStack, HStack, Divider, Flex } from "@chakra-ui/react";
+import { Box, Text, VStack, HStack, Divider } from "@chakra-ui/react";
 
 //Components Reusable
 const SaleUnit = ({ titleCorner }) => (
@@ -19,45 +24,56 @@ const SaleUnit = ({ titleCorner }) => (
 );
 
 const MeltedCollection = () => {
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await axios.get("/api/products");
+  //     setProducts(result.mischiefProductData);
+  //   };
+  //   fetchData;
+  // }, []);
+
   return (
     <>
       {mischiefProductData.products.map((product) => (
-        <Box w={300} h={500} border="1.5px solid #000" key={product.slug}>
-          <SaleUnit titleCorner="sale" />
-          <VStack>
-            <Image
-              src={product.imageUrl}
-              width={400}
-              height={460}
-              alt="Tsuki Brand Collection Image Sales"
-            />
-            <Divider borderColor="#000" />
-            <Box m={2}>
-              <VStack>
-                <Box>
-                  <Text>{product.name}</Text>
-                </Box>
-                <Box>
-                  <HStack>
-                    <Box>
-                      <Text
-                        textTransform="uppercase"
-                        textDecoration="line-through"
-                      >
-                        ${product.oldPrice}USD
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Text textTransform="uppercase">
-                        ${product.newPrice}USD
-                      </Text>
-                    </Box>
-                  </HStack>
-                </Box>
-              </VStack>
-            </Box>
-          </VStack>
-        </Box>
+        <NextLink href={`/meltedProductsDetails/${product.slug}`} passHref>
+          <Box w={300} h={500} border="1.5px solid #000" key={product.name}>
+            <SaleUnit titleCorner="sale" />
+            <VStack>
+              <Image
+                src={product.imageUrl}
+                width={400}
+                height={460}
+                alt="Tsuki Brand Collection Image Sales"
+              />
+              <Divider borderColor="#000" />
+              <Box m={2}>
+                <VStack>
+                  <Box>
+                    <Text>{product.name}</Text>
+                  </Box>
+                  <Box>
+                    <HStack>
+                      <Box>
+                        <Text
+                          textTransform="uppercase"
+                          textDecoration="line-through"
+                        >
+                          ${product.oldPrice}USD
+                        </Text>
+                      </Box>
+                      <Box>
+                        <Text textTransform="uppercase">
+                          ${product.newPrice}USD
+                        </Text>
+                      </Box>
+                    </HStack>
+                  </Box>
+                </VStack>
+              </Box>
+            </VStack>
+          </Box>
+        </NextLink>
       ))}
     </>
   );

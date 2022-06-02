@@ -227,6 +227,15 @@ body {
     font-family: var(--font-nunito);
   }
 
+  .text-font-sans {
+    font-family: var(--font-nunito-sans);
+  }
+
+  .text-font-description {
+    font-family: var( --font-manrope);
+  }
+
+
   .navbar-title {
     font-family: var(--font-nunito);
   }
