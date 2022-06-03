@@ -10,6 +10,7 @@
 <p>✔️Chakra-Ui : a simple, modular and accessible component library</p>
 <p>✔️eMotion : The Next Generation of CSS-in-JS for animation</p>
 <p>✔️Axios: parse incoming request bodies in a middleware before handlers</p>
+<p>✔️Next-connect : smol method routing and middleware for Next.js</p>
 <p>✔️Framer-Motion : an open source, production-ready library that's designed for all creative developers</p>
 <p>✔️Millify : converts long numbers into pretty, human-readable strings</p>
 <p>✔️nProgress : slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium</p>
