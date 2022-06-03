@@ -10,10 +10,10 @@ global.mongoose = {
 export async function dbConnect() {
 
   if (global.mongoose && global.mongoose.conn) {
-    console.log("You're using an existing mongoose connection");
+    console.log("You're using an existing mongoose connection !");
     return global.mongoose.conn;
   } else {
-    console.log("You got a new moongose connection")
+    console.log("You got a new mongose connection !")
     const user = process.env.MONGODB_USER;
     const password = process.env.MONGODB_PASSWORD;
     const database = process.env.MONGODB_DATABASE;
