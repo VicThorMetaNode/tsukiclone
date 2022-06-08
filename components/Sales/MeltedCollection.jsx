@@ -1,5 +1,4 @@
 // ------------ SALES PRODUCTS MAPPING COMPONENT: every product on sale -------------
-// import { useState, useEffect } from "react";
 
 //Import Data product on sales
 import mischiefProductData from "../../utilities/Sales Collection/mischiefProductData";
@@ -7,9 +6,10 @@ import mischiefProductData from "../../utilities/Sales Collection/mischiefProduc
 import Image from "next/image";
 //Import Next special Link
 import NextLink from "next/link";
-
-//Import Axios of fetching products data
-// import axios from "axios";
+//Import db
+// import { dbConnect } from "../../utilities/Database/db";
+//Import Product Model
+// import Product from "../../Backend/models/Product";
 
 // Import CHAKRA tools
 import { Box, Text, VStack, HStack, Divider } from "@chakra-ui/react";
@@ -23,18 +23,12 @@ const SaleUnit = ({ titleCorner }) => (
   </Box>
 );
 
-const MeltedCollection = () => {
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios.get("/api/products");
-  //     setProducts(result.mischiefProductData);
-  //   };
-  //   fetchData;
-  // }, []);
+export default function MeltedCollection() {
+  // const { products } = props;
 
   return (
     <>
+      {/* (products || []).map((product) */}
       {mischiefProductData.products.map((product) => (
         <NextLink href={`/meltedProductsDetails/${product.slug}`} passHref>
           <Box w={300} h={500} border="1.5px solid #000" key={product.name}>
@@ -77,6 +71,14 @@ const MeltedCollection = () => {
       ))}
     </>
   );
-};
+}
 
-export default MeltedCollection;
+// export async function getServerSideProps() {
+//   await dbConnect();
+//   const products = await Product.find({}).lean();
+//   return {
+//     props: {
+//       products: products.map(db.convertDocToObj),
+//     },
+//   };
+// }

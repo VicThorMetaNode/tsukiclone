@@ -1,13 +1,14 @@
-import React from "react";
-//Import built-in router
-import { useRouter } from "next/router";
 //Import image from React
 import Image from "next/image";
 //Import Next special Link
 import NextLink from "next/link";
 
-//Import products data
-import mischiefProductData from "../../utilities/Sales Collection/mischiefProductData";
+import { useRouter } from 'next/router'
+
+//Import product DB
+// import Product from "../../Backend/models/Product";
+// import { dbConnect } from "../../utilities/Database/db";
+import Product from "../../utilities/Sales Collection/mischiefProductData";
 
 //Import Product Not Found reusable component
 import { NotFoundProduct } from "../../utilities/const/NotFoundProduct";
@@ -15,6 +16,8 @@ import { NotFoundProduct } from "../../utilities/const/NotFoundProduct";
 //import Icons from React-icons NPM: notice, we use Icon tool from Chakra ui an mention react icon as {props} :see below
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { TiSocialPinterest } from "react-icons/ti";
+
+
 
 import Layout from "../../components/Layout";
 
@@ -39,14 +42,15 @@ import {
   NumberIncrementStepper,
   NumberDecrementStepper,
 } from "@chakra-ui/react";
+import mischiefProductData from "../../utilities/Sales Collection/mischiefProductData";
 
 export default function ProductDetails() {
-  //init router as fct
-  const router = useRouter();
-  //create route for products
-  const { slug } = router.query;
-  //make sure there's a match btc query and product db
-  const product = mischiefProductData.products.find((a) => a.slug === slug);
+//  const { product } = props;
+ const router = useRouter();
+ const { slug } = router.query;
+
+ const product = mischiefProductData.products.find((a) => a.slug === slug);
+
   //if product not found = error message
   if (!product) {
     return <NotFoundProduct />;
@@ -209,3 +213,16 @@ export default function ProductDetails() {
     </>
   );
 }
+
+// export async function getServerSideProps(context) {
+//   const { params } = context;
+//   const { slug } = params;
+
+//   await dbConnect();
+//   const product = await Product.findOne({ slug }).lean();
+//   return {
+//     props: {
+//       product: db.convertDocToObj(product),
+//     },
+//   };
+// }

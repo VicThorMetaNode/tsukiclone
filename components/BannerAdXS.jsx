@@ -1,11 +1,24 @@
 // ------------ BANNER: advertising price sales  -------------
-import React from "react";
 
 // Import CHAKRA tools
 import { Box, Text } from "@chakra-ui/react";
 
 //Import constance Banner Extra Small for mor reusability
-import BannerXS from "../utilities/const/bannerXS";
+const BannerXS = ({ title }) => {
+  return (
+    <Text
+      textAlign="center"
+      className="banner-adv-xs"
+      fontSize={["30px", "60px", "120px"]}
+      textTransform="uppercase"
+      fontWeight="900"
+      pb={2}
+      mb={2}
+    >
+      {title}
+    </Text>
+  );
+};
 
 const BannerAdXS = () => {
   return (

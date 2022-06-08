@@ -13,7 +13,7 @@ export async function dbConnect() {
     console.log("You're using an existing mongoose connection !");
     return global.mongoose.conn;
   } else {
-    console.log("You got a new mongose connection !")
+    console.log("You got a new mongoose connection !")
     const user = process.env.MONGODB_USER;
     const password = process.env.MONGODB_PASSWORD;
     const database = process.env.MONGODB_DATABASE;
@@ -32,3 +32,11 @@ export async function dbConnect() {
   }
 
 }
+
+export default function convertDocToObj(doc) {
+  doc._id = doc._id.toString();
+  doc.createdAt = doc.createdAt.toString();
+  doc.updatedAt = doc.updatedAt.toString();
+  return doc;
+}
+

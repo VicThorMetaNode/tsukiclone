@@ -4,6 +4,9 @@ import { Header, Collection, Bio, BannerAdXS, Sale} from '../components/index'
 //Import layout defined in layout file in components folder
 import Layout from '../components/Layout'
 
+export const config = {
+  unstable_runtimeJS: false
+}
 
 export default function Home() {
   return (
