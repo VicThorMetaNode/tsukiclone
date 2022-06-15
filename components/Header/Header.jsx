@@ -19,6 +19,7 @@ const Header = () => {
           width="400px"
           height="400px"
           layout="responsive"
+          alt="Tsuki Brand Collection Image"
         />
         <Box position="absolute" top="50%" right={["35%", "43%", "45%"]}>
           <Button

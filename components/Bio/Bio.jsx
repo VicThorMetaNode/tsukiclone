@@ -2,8 +2,6 @@ import React from "react";
 
 //Import image from React
 import Image from "next/image";
-//Import link from React
-import Link from "next/link";
 
 // Import CHAKRA tools
 import { Box, Stack, VStack, Container, Text } from "@chakra-ui/react";
