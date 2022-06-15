@@ -16,6 +16,7 @@
 <p>✔️nProgress : slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium</p>
 <p>✔️React-horizontal-scrolling-menu : a horizontal scrolling menu component for React</p>
 <p>✔️React-icons : a simple, modular and accessible icons library </p>
+<p>✔️Next-connect : smol method routing and middleware for Next.js </p>
 
 > Note: this project is a *beta version* and is updated over time until an ultimate version is reached, meaning a fully ecomm.
 Cheers !
